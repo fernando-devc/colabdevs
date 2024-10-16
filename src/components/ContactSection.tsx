@@ -4,7 +4,8 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import localFont from 'next/font/local';
 import emailjs from 'emailjs-com';
-import { useToast } from "@/hooks/use-toast"; // Import useToast
+import { useToast } from "@/hooks/use-toast"; 
+import WhatsAppButton from "@/components/WhatsAppButton"; 
 
 const FontArista = localFont({ src: 'fonts/Arista-Pro-Regular-trial.woff2' });
 
@@ -53,7 +54,9 @@ export default function ContactSection() {
   return (
     <section id="contact" className={`py-16 md:py-20 w-full bg-white`}>
       <div className="container mx-auto px-4">
-        <h2 className={`text-3xl md:text-4xl font-bold text-gray-800 text-center mb-12 md:mb-16 ${FontArista.className}`}>Entre em Contato</h2>
+        <h2 className={`text-3xl md:text-4xl font-bold text-gray-800 text-center mb-12 md:mb-16 ${FontArista.className}`}>
+          Entre em Contato
+        </h2>
         <div className="max-w-lg mx-auto">
           <form className="space-y-6" onSubmit={handleSubmit}>
             <Input
@@ -90,11 +93,19 @@ export default function ContactSection() {
             />
             <Button
               type="submit"
-              className={`w-full bg-green-500 text-white hover:bg-green-600 py-3 md:py-4 text-base md:text-lg font-semibold ${FontArista.className}`}
+              className={`w-full bg-gray-600 text-white hover:bg-gray-800 py-3 md:py-4 text-base md:text-lg font-semibold ${FontArista.className}`}
             >
               Enviar Mensagem
             </Button>
           </form>
+
+          <div className="mt-12 text-center">
+            <h3 className={`text-xl font-bold mb-4 ${FontArista.className}`}>Ou contate-nos via WhatsApp</h3>
+            <WhatsAppButton 
+              phoneNumber="69999900694" 
+              message="Olá, Colab Devs!" 
+            />
+          </div>
         </div>
       </div>
     </section>
