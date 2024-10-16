@@ -33,6 +33,7 @@ export default function Home() {
       <Header />
       <main className="z-10 w-full h-full flex justify-start items-start flex-col">
         <HeroPageRocket />
+        <img src="rocket _bg.png" alt="" className="w-full h-20" /> {/* Adicionando a classe aqui */}
         <AboutSection />
         <ServicesSection />
         <HeroSection />
