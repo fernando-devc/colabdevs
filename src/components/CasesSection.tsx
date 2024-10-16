@@ -1,7 +1,7 @@
-import Image from "next/image"
-import { CheckCircle } from "lucide-react"
-import localFont from 'next/font/local'
-const FontArista = localFont({ src: 'fonts/Arista-Pro-Regular-trial.woff2', variable: '--font-arista' })
+import Image from "next/image";
+import { CheckCircle } from "lucide-react";
+import localFont from 'next/font/local';
+const FontArista = localFont({ src: 'fonts/Arista-Pro-Regular-trial.woff2', variable: '--font-arista' });
 
 interface CaseCardProps {
   title: string;
@@ -13,10 +13,10 @@ interface CaseCardProps {
 
 export default function CasesSection() {
   return (
-    <section id="casos" className={`py-20 bg-gray-100 w-full ${FontArista.className}`}>
-      <div className="container mx-auto">
-        <h2 className="text-4xl font-bold text-center text-gray-800 mb-16">Cases de Sucesso</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+    <section id="casos" className={`py-16 bg-gray-100 w-full ${FontArista.className}`}>
+      <div className="container mx-auto px-4">
+        <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-12 md:mb-16">Cases de Sucesso</h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
           <CaseCard
             title="Hug Food"
             description="Aplicativo de delivery com integração de pagamento com a C88 Pay."
@@ -34,22 +34,22 @@ export default function CasesSection() {
         </div>
       </div>
     </section>
-  )
+  );
 }
 
 function CaseCard({ title, description, tech, imageUrl, link }: CaseCardProps) {
   return (
     <a href={link} target="_blank" rel="noopener noreferrer">
-      <div className="bg-white p-8 rounded-lg shadow-lg flex transition-transform hover:scale-105 cursor-pointer">
-        <div className="flex-grow">
-          <h3 className="text-2xl font-semibold text-gray-800 mb-4 font-arista">{title}</h3>
-          <p className="text-gray-600 mb-6 font-arista">{description}</p>
+      <div className="bg-white p-6 md:p-8 rounded-lg shadow-lg flex flex-col md:flex-row transition-transform hover:scale-105 cursor-pointer">
+        <div className="flex-grow mb-4 md:mb-0">
+          <h3 className="text-xl md:text-2xl font-semibold text-gray-800 mb-2 md:mb-4 font-arista">{title}</h3>
+          <p className="text-sm md:text-base text-gray-600 mb-4 md:mb-6 font-arista">{description}</p>
           <div className="flex items-center text-green-500 font-arista">
-            <CheckCircle className="w-6 h-6 mr-2" />
-            <span className="font-medium">{tech}</span>
+            <CheckCircle className="w-5 h-5 md:w-6 md:h-6 mr-2" />
+            <span className="text-sm md:text-base font-medium">{tech}</span>
           </div>
         </div>
-        <div className="flex items-center justify-center w-24">
+        <div className="flex items-center justify-center md:justify-end w-full md:w-24">
           <Image
             src={imageUrl}
             alt={`${title} Logo`}
@@ -60,5 +60,5 @@ function CaseCard({ title, description, tech, imageUrl, link }: CaseCardProps) {
         </div>
       </div>
     </a>
-  )
+  );
 }
