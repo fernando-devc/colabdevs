@@ -12,6 +12,7 @@ import CasesSection from "@/components/CasesSection"
 import ContactSection from "@/components/ContactSection"
 import PartnersSection from "@/components/PartnersSection"
 import Footer from "@/components/Footer"
+import BackToTopButton from "@/components/BackToTopButton"
 
 const FontArista = localFont({ src: '../components/fonts/Arista-Pro-Regular-trial.woff2' })
 
@@ -43,6 +44,7 @@ export default function Home() {
         <ContactSection />
         <PartnersSection />
         <Footer />
+        <BackToTopButton/>
       </main>
     </div>
   )
