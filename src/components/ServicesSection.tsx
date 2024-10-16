@@ -11,7 +11,7 @@ interface ServiceCardProps {
 
 export default function ServicesSection() {
   return (
-    <section id="servicos" className={`bg-gray-100 w-full py-16 ${FontArista.className}`}>
+    <section id="services"  className={`bg-gray-100 w-full py-16 ${FontArista.className}`}>
       <div className="container mx-auto px-4">
         <h2 className="text-3xl md:text-4xl font-bold text-gray-800 text-center mb-12 md:mb-16">Nossos Serviços</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 md:gap-12">
