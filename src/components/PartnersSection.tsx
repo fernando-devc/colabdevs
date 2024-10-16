@@ -1,3 +1,7 @@
+import localFont from 'next/font/local'
+
+const FontArista = localFont({ src: 'fonts/Arista-Pro-Regular-trial.woff2' })
+
 interface PartnerLogoProps {
     src: string;
     alt: string;
@@ -5,7 +9,7 @@ interface PartnerLogoProps {
   
   export default function PartnersSection() {
     return (
-      <section className="py-20 bg-gray-100 w-full">
+    <section className={`py-20 bg-gray-100 w-full ${FontArista.className}`}>
         <div className="container mx-auto">
           <h2 className="text-4xl font-bold text-center text-gray-800 mb-16">Empresas que Confiam na Colab Devs</h2>
           <div className="flex flex-wrap justify-center items-center gap-12">
