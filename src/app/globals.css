@@ -76,3 +76,7 @@ body {
     @apply bg-background text-foreground;
   }
 }
+
+.font-arista {
+  font-family: 'Arista-Pro-Regular', sans-serif !important;
+}

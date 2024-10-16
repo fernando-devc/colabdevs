@@ -1,8 +1,10 @@
 import Image from "next/image"
+import localFont from 'next/font/local'
+const FontArista = localFont({ src: 'fonts/Arista-Pro-Regular-trial.woff2' })
 
 export default function AboutSection() {
   return (
-    <section className="py-20 w-full  bg-white to-white">
+    <section className={`py-20 w-full bg-white to-white ${FontArista.className}`}>
       <div className="container mx-auto px-4 flex flex-col md:flex-row items-center justify-between">
         <div className="md:w-1/2 mb-10 md:mb-0">
           <h1 className="text-4xl md:text-5xl font-bold mb-4 text-gray-800">Líder em soluções digitais inovadoras</h1>
