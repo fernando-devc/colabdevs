@@ -48,15 +48,14 @@ export default function Header() {
         </div>
         <div className="flex-1" />
 
-        <div className="md:flex lg:flex hidden gap-5 items-center">
+        <div className="hidden lg:flex gap-5 items-center">
           <Button onClick={() => handleButtonClick("about")} color="success" variant="ghost" className={`${FontArista.className} dark:text-white hover:text-green-500 text-xl`}>Sobre</Button>
           <Button onClick={() => handleButtonClick("services")} color="success" variant="ghost" className={`${FontArista.className} dark:text-white hover:text-green-500 text-xl`}>Serviços</Button>
           <Button onClick={() => handleButtonClick("cases")} color="success" variant="ghost" className={`${FontArista.className} dark:text-white hover:text-green-500 text-xl`}>Cases</Button>
           <Button onClick={() => handleButtonClick("contact")} color="success" variant="ghost" className={`${FontArista.className} dark:text-white hover:text-green-500 text-xl`}>Contato</Button>
           <Button onClick={() => handleButtonClick("partners")} color="success" variant="ghost" className={`${FontArista.className} dark:text-white hover:text-green-500 text-xl`}>Parceiros</Button>
         </div>
-
-        <div className="md:hidden lg:hidden flex gap-5 items-center">
+        <div className="lg:hidden flex gap-5 items-center">
           <Sheet open={isOpen} onOpenChange={setIsOpen}>
             <SheetTrigger asChild>
               <Button variant="ghost" className="flex items-center" onClick={() => setIsOpen(true)}>
