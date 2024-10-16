@@ -27,12 +27,12 @@ export default function ContactSection() {
     };
 
     emailjs.send(
-      'service_cukyouu',
-      'template_5tyragf',
+      'service_ifi0hjs', 
+      'template_1ovjpge', 
       templateParams,
-      '0R7OBJiFH5RP3k_f0'
+      '4jvcEF3PTH7RIRQ1k' 
     ).then(() => {
-      // Clear input fields
+      // Limpa os filtros
       setNome('');
       setEmail('');
       setTelefone('');
