@@ -5,19 +5,22 @@ const FontArista = localFont({ src: 'fonts/Arista-Pro-Regular-trial.woff2' });
 
 export default function AboutSection() {
   return (
-    <section className={`py-20 w-full bg-customGreen ${FontArista.className}`}>
-      <div className="container mx-auto px-4 flex flex-col md:flex-row items-center justify-between space-y-8 md:space-y-0">
-        <div className="w-full md:w-1/2 flex flex-col justify-center text-center md:text-left">
-          <h1 className="text-3xl md:text-5xl font-bold mb-5 text-white">
-            Líder em soluções digitais inovadoras
-          </h1>
-          <p className="text-lg md:text-xl mb-4 text-white">
-            A Colab Devs é uma empresa de tecnologia sediada em Porto Velho, especializada no desenvolvimento de soluções inovadoras para plataformas web, mobile e outras tecnologias digitais. Com uma equipe altamente qualificada e comprometida, atuamos em diversos setores, oferecendo serviços personalizados para atender às necessidades de nossos clientes.
+    <section className={`py-20 w-full bg-white ${FontArista.className}`}>
+      <div className="container mx-auto px-4 flex flex-col md:flex-row items-center justify-between">
+        <div className="md:w-1/2 mb-10 md:mb-0 flex flex-col items-center md:items-start">
+          <h1 className="text-4xl md:text-5xl font-bold mb-4 text-gray-800 text-center md:text-left">Líder em soluções digitais inovadoras</h1>
+          <p className="text-xl mb-6 text-gray-600 text-center md:text-left">
+             A Colab Devs é uma empresa de tecnologia sediada em Porto Velho, especializada no desenvolvimento 
+             de soluções inovadoras para plataformas web,
+             mobile e outras tecnologias digitais. 
+             Com uma equipe altamente qualificada e comprometida, 
+             atuamos em diversos setores, oferecendo serviços personalizados para atender às necessidades de nossos clientes.
           </p>
         </div>
         <div className="w-full md:w-1/2 flex justify-center md:justify-end relative">
-          <div className="absolute hidden md:block -right-10 lg:right-20 bg-green-300 rounded-full mix-blend-multiply filter blur-3xl opacity-70 w-48 h-48 md:w-64 md:h-64"></div>
-          <div className="relative">
+          <div className="absolute md:hidden -top-10 bg-green-300 rounded-full mix-blend-multiply filter blur-3xl opacity-70 w-[400px] h-[400px]"></div>
+          <div className="absolute hidden md:block -top-20 bg-green-300 rounded-full mix-blend-multiply filter blur-3xl opacity-70 w-[500px] h-[500px]"></div>
+          <div className="relative z-10">
             <Image
               src="/colab.jpeg"
               width={400}

@@ -1,7 +1,6 @@
 'use client'
 
 import { useEffect, useState } from "react"
-import localFont from 'next/font/local'
 import Star from "@/components/Stars"
 import Header from "@/components/Header"
 import HeroPageRocket from "@/components/Heros/HeroPageRocket"
@@ -14,7 +13,6 @@ import PartnersSection from "@/components/PartnersSection"
 import Footer from "@/components/Footer"
 import BackToTopButton from "@/components/BackToTopButton"
 
-const FontArista = localFont({ src: '../components/fonts/Arista-Pro-Regular-trial.woff2' })
 
 export default function Home() {
   const [mounted, setMounted] = useState(false)
@@ -35,7 +33,6 @@ export default function Home() {
       <Header />
       <main className="z-10 w-full h-full flex justify-start items-start flex-col">
         <HeroPageRocket />
-        <section className="w-full bg-green-500 h-14"></section>
         <AboutSection />
         <ServicesSection />
         <HeroSection />
