@@ -18,8 +18,8 @@ export default function AboutSection() {
           </p>
         </div>
         <div className="w-full md:w-1/2 flex justify-center md:justify-end relative">
-          <div className="absolute md:hidden -top-10 bg-green-300 rounded-full mix-blend-multiply filter blur-3xl opacity-70 w-[400px] h-[400px]"></div>
-          <div className="absolute hidden md:block -top-20 bg-green-300 rounded-full mix-blend-multiply filter blur-3xl opacity-70 w-[500px] h-[500px]"></div>
+          <div className="absolute md:hidden -top-10 bg-green-200 rounded-full mix-blend-multiply filter blur-3xl opacity-70 w-[400px] h-[400px]"></div>
+          <div className="absolute hidden md:block -top-20 bg-green-200 rounded-full mix-blend-multiply filter blur-3xl opacity-70 w-[500px] h-[500px]"></div>
           <div className="relative z-10">
             <Image
               src="/colab.jpeg"
