@@ -13,7 +13,7 @@ interface CaseCardProps {
 
 export default function CasesSection() {
   return (
-    <section id="casos" className={`py-16 bg-gray-100 w-full ${FontArista.className}`}>
+    <section  id="cases" className={`py-16 bg-gray-100 w-full ${FontArista.className}`}>
       <div className="container mx-auto px-4">
         <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-12 md:mb-16">Cases de Sucesso</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">

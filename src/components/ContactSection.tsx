@@ -6,7 +6,7 @@ const FontArista = localFont({ src: 'fonts/Arista-Pro-Regular-trial.woff2' });
 
 export default function ContactSection() {
   return (
-    <section id="contato" className={`py-16 md:py-20 w-full bg-white ${FontArista.className}`}>
+    <section id="contact"className={`py-16 md:py-20 w-full bg-white ${FontArista.className}`}>
       <div className="container mx-auto px-4">
         <h2 className="text-3xl md:text-4xl font-bold text-gray-800 text-center mb-12 md:mb-16">Entre em Contato</h2>
         <div className="max-w-lg mx-auto">
