@@ -26,14 +26,15 @@ export default function Home() {
   return (
     <div className="h-full dark:bg-black bg-white flex items-center flex-col relative">
       <div className="h-screen top-0 bottom-0 overflow-hidden absolute z-0 w-full">
-        {[...Array(40)].map((_, index) => (
+        {[...Array(100)].map((_, index) => (
           <Star key={index} size={Math.floor(Math.random() * 2) + 1} />
+          
         ))}
       </div>
       <Header />
       <main className="z-10 w-full h-full flex justify-start items-start flex-col">
         <HeroPageRocket />
-        <img src="rocket _bg.png" alt="" className="w-full h-20" /> {/* Adicionando a classe aqui */}
+        <img src="rocket _bg.png" alt="" className="w-full h-20" /> 
         <AboutSection />
         <ServicesSection />
         <HeroSection />
