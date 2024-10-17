@@ -8,7 +8,7 @@ import { ThemeSwitcher } from "@/components/ThemeSwitcher";
 import { useSmoothScroll } from "@/hooks/use-smooth-scroll";
 import { Sheet, SheetTrigger, SheetContent, SheetTitle, SheetDescription } from "@/components/ui/sheet";
 import { Menu } from "lucide-react";
-import useCloseSheet from "@/hooks/use-close-sheet"; // Importando o hook
+import useCloseSheet from "@/hooks/use-close-sheet";
 
 const FontArista = localFont({ src: "fonts/Arista-Pro-Regular-trial.woff2" });
 
@@ -22,13 +22,12 @@ export default function Header() {
     setMounted(true);
   }, []);
 
-  // Usando o hook para fechar o Sheet quando a janela for redimensionada
   useCloseSheet(isOpen, setIsOpen);
 
   if (!mounted) return null;
 
   const handleButtonClick = (section: string) => {
-    setIsOpen(false); // Fecha o Sheet primeiro
+    setIsOpen(false); 
     setTimeout(() => {
       requestAnimationFrame(() => {
         scrollToElement(section);
