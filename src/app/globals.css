@@ -40,31 +40,27 @@ body {
     --chart-5: 27 87% 67%;
     --radius: 0.5rem;
   }
+
   .dark {
-    --background: 240 10% 3.9%;
-    --foreground: 0 0% 98%;
-    --card: 240 10% 3.9%;
-    --card-foreground: 0 0% 98%;
-    --popover: 240 10% 3.9%;
-    --popover-foreground: 0 0% 98%;
-    --primary: 0 0% 98%;
-    --primary-foreground: 240 5.9% 10%;
+    --background: 0 0% 0%; /* Fundo preto completo */
+    --foreground: 0 0% 98%; /* Texto bem claro */
+    --card: 240 4.8% 12%; /* Fundo mais escuro para cartões */
+    --card-foreground: 0 0% 98%; /* Texto claro para cartões */
+    --popover: 240 4.8% 12%; /* Fundo mais escuro para popovers */
+    --popover-foreground: 0 0% 98%; /* Texto claro */
+    --primary: 0 0% 98%; /* Branco */
+    --primary-foreground: 0 0% 0%; /* Preto */
     --secondary: 240 3.7% 15.9%;
     --secondary-foreground: 0 0% 98%;
-    --muted: 240 3.7% 15.9%;
-    --muted-foreground: 240 5% 64.9%;
-    --accent: 240 3.7% 15.9%;
+    --muted: 240 4% 20%; /* Fundo mais suave para modo dark */
+    --muted-foreground: 240 5% 70%; /* Texto em tons de cinza claro */
+    --accent: 240 3.7% 15.9%; /* Fundo mais suave para elementos de destaque */
     --accent-foreground: 0 0% 98%;
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 0 0% 98%;
-    --border: 240 3.7% 15.9%;
-    --input: 240 3.7% 15.9%;
-    --ring: 240 4.9% 83.9%;
-    --chart-1: 220 70% 50%;
-    --chart-2: 160 60% 45%;
-    --chart-3: 30 80% 55%;
-    --chart-4: 280 65% 60%;
-    --chart-5: 340 75% 55%;
+    --border: 240 5.9% 30%; /* Cor de borda escura */
+    --input: 240 5.9% 30%; /* Fundo de input mais escuro */
+    --ring: 0 0% 98%; /* Anéis claros para foco */
   }
 }
 

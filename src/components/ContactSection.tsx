@@ -4,8 +4,8 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import localFont from 'next/font/local';
 import emailjs from 'emailjs-com';
-import { useToast } from "@/hooks/use-toast"; 
-import WhatsAppButton from "@/components/WhatsAppButton"; 
+import { useToast } from "@/hooks/use-toast";
+import WhatsAppButton from "@/components/WhatsAppButton";
 
 const FontArista = localFont({ src: 'fonts/Arista-Pro-Regular-trial.woff2' });
 
@@ -14,7 +14,7 @@ export default function ContactSection() {
   const [email, setEmail] = useState('');
   const [telefone, setTelefone] = useState('');
   const [mensagem, setMensagem] = useState('');
-  const { toast } = useToast(); // Initialize toast
+  const { toast } = useToast();
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -32,7 +32,6 @@ export default function ContactSection() {
       templateParams,
       '4jvcEF3PTH7RIRQ1k' 
     ).then(() => {
-      // Limpa os filtros
       setNome('');
       setEmail('');
       setTelefone('');
@@ -52,9 +51,9 @@ export default function ContactSection() {
   };
 
   return (
-    <section id="contact" className={`py-16 md:py-20 w-full bg-white`}>
+    <section id="contact" className={`py-16 md:py-20 w-full bg-white dark:bg-black dark:text-white`}>
       <div className="container mx-auto px-4">
-        <h2 className={`text-3xl md:text-4xl font-bold text-gray-800 text-center mb-12 md:mb-16 ${FontArista.className}`}>
+        <h2 className={`text-3xl md:text-4xl font-bold text-gray-800 dark:text-white text-center mb-12 md:mb-16 ${FontArista.className}`}>
           Entre em Contato
         </h2>
         <div className="max-w-lg mx-auto">
@@ -93,7 +92,7 @@ export default function ContactSection() {
             />
             <Button
               type="submit"
-              className={`w-full bg-gray-600 text-white hover:bg-gray-800 py-3 md:py-4 text-base md:text-lg font-semibold ${FontArista.className}`}
+              className={`w-full bg-gray-600 dark:bg-green-600 text-white hover:bg-gray-800 py-3 md:py-4 text-base md:text-lg font-semibold ${FontArista.className}`}
             >
               Enviar Mensagem
             </Button>
