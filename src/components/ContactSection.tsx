@@ -51,7 +51,7 @@ export default function ContactSection() {
   };
 
   return (
-    <section id="contact" className={`py-16 md:py-20 w-full bg-white dark:bg-background ${FontArista.className}`}>
+    <section id="contact" className={`py-16 md:py-20 w-full bg-white dark:bg-background`}>
       <div className="container mx-auto px-4">
         <h2 className={`text-3xl md:text-4xl font-bold text-gray-800 dark:text-primary text-center mb-12 md:mb-16`}>
           Entre em Contato
@@ -99,7 +99,7 @@ export default function ContactSection() {
           </form>
           <div className="mt-12 text-center">
             <h3 className={`text-xl font-bold mb-4 text-gray-800 dark:text-primary`}>Ou contate-nos via WhatsApp</h3>
-            <WhatsAppButton phoneNumber="69999900694" message="Olá, Colab Devs!" />
+            <WhatsAppButton phoneNumber="6999848414" message="Olá, Colab Devs!" />
           </div>
         </div>
       </div>

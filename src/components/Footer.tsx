@@ -11,13 +11,13 @@ export default function Footer() {
                     <span className="font-sans">&copy; 2024</span> Colab Devs. Todos os direitos reservados.
                 </p>
                 <div className="flex justify-center space-x-6">
-                    <a href="https://www.youtube.com/@colabdevs743" className="text-gray-400 hover:text-green-600 transition-colors">
+                    <a href="https://www.youtube.com/@colabdevs743" className="text-white-400 hover:text-green-600 transition-colors">
                         <Youtube size={24} />
                     </a>
-                    <a href="https://www.linkedin.com/in/colab-devs-7b41b3244/" className="text-gray-400 hover:text-green-600 transition-colors">
+                    <a href="https://www.linkedin.com/in/colab-devs-7b41b3244/" className="text-white-400 hover:text-green-600 transition-colors">
                         <Linkedin size={24} />
                     </a>
-                    <a href="https://www.instagram.com/colabdevs/" className="text-gray-400 hover:text-green-600 transition-colors">
+                    <a href="https://www.instagram.com/colabdevs/" className="text-white-400 hover:text-green-600 transition-colors">
                         <Instagram size={24} />
                     </a>
                 </div>

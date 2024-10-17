@@ -14,9 +14,9 @@ export default function PartnersSection() {
   const { theme } = useTheme();
 
   return (
-    <section id="partners" className={`py-20 bg-gray-100 dark:bg-secondary w-full ${FontArista.className}`}>
+    <section id="partners" className={`py-20 bg-gray-100 dark:bg-black w-full ${FontArista.className}`}>
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl sm:text-4xl font-bold text-center text-gray-800 dark:text-primary mb-8  sm:mb-16">
+        <h2 className="text-3xl sm:text-4xl font-bold text-center text-gray-800 dark:text-primary mb-8 sm:mb-16">
           Empresas que Confiam na Colab Devs
         </h2>
         <div className="flex flex-wrap justify-center items-center gap-6 sm:gap-12">

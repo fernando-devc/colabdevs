@@ -1,29 +1,22 @@
-'use client';
-
 import { useEffect, useState } from "react";
 import { useTheme } from "next-themes";
 import localFont from "next/font/local";
 import { Button } from "@/components/ui/button";
 import { ThemeSwitcher } from "@/components/ThemeSwitcher";
-import { useSmoothScroll } from "@/hooks/use-smooth-scroll";
 import { Sheet, SheetTrigger, SheetContent, SheetTitle, SheetDescription } from "@/components/ui/sheet";
 import { Menu } from "lucide-react";
-import useCloseSheet from "@/hooks/use-close-sheet"; // Importando o hook
+import Star from "@/components/Stars"; // Importar o componente de estrelas
 
 const FontArista = localFont({ src: "fonts/Arista-Pro-Regular-trial.woff2" });
 
 export default function Header() {
   const [mounted, setMounted] = useState(false);
   const { theme } = useTheme();
-  const scrollToElement = useSmoothScroll();
   const [isOpen, setIsOpen] = useState(false);
 
   useEffect(() => {
     setMounted(true);
   }, []);
-
-  // Usando o hook para fechar o Sheet quando a janela for redimensionada
-  useCloseSheet(isOpen, setIsOpen);
 
   if (!mounted) return null;
 
@@ -37,8 +30,15 @@ export default function Header() {
   };
 
   return (
-    <header className="py-2 w-full mx-auto px-5 lg:justify-start justify-center flex z-10">
-      <nav className="flex container mx-auto items-center">
+    <header className="py-2 w-full mx-auto px-5 lg:justify-start justify-center flex z-10 relative">
+      {/* Adicionar as estrelas aqui */}
+      <div className="absolute top-0 left-0 w-full h-full z-0">
+        {[...Array(40)].map((_, index) => (
+          <Star key={index} size={Math.floor(Math.random() * 2) + 1} />
+        ))}
+      </div>
+      
+      <nav className="flex container mx-auto items-center z-10">
         <div>
           {theme !== "dark" ? (
             <img src="/logo-light-horizontar.png" alt="logo" className="lg:h-32 h-24" />
@@ -55,6 +55,7 @@ export default function Header() {
           <Button onClick={() => handleButtonClick("contact")} color="success" variant="ghost" className={`${FontArista.className} dark:text-white hover:text-green-500 text-xl`}>Contato</Button>
           <Button onClick={() => handleButtonClick("partners")} color="success" variant="ghost" className={`${FontArista.className} dark:text-white hover:text-green-500 text-xl`}>Parceiros</Button>
         </div>
+        
         <div className="lg:hidden flex gap-5 items-center">
           <Sheet open={isOpen} onOpenChange={setIsOpen}>
             <SheetTrigger asChild>
