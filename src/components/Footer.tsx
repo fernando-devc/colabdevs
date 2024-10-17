@@ -5,7 +5,7 @@ const FontArista = localFont({ src: 'fonts/Arista-Pro-Regular-trial.woff2' });
 
 export default function Footer() {
     return (
-        <footer className="bg-black text-white py-12 w-full"> {/* Ajuste de cor para dark */}
+        <footer className="bg-gray-800 dark:bg-black text-white py-12 w-full">
             <div className="container mx-auto text-center">
                 <p className={`mb-4 font-normal ${FontArista.className}`}>
                     <span className="font-sans">&copy; 2024</span> Colab Devs. Todos os direitos reservados.

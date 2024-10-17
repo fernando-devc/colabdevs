@@ -12,7 +12,7 @@ export default function HeroSection() {
   };
 
   return (
-    <section className={`bg-black w-full text-white py-16 md:py-24 ${FontArista.className}`}>
+    <section className={`bg-gray-800 dark:bg-black w-full text-white py-16 md:py-24 ${FontArista.className}`}>
       <div className="container mx-auto px-4 text-center">
         <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold mb-4 leading-tight">
           Transformando Ideias em <span className="text-green-400">Realidade Digital</span>
