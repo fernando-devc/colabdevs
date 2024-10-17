@@ -1,18 +1,18 @@
 import { Button } from "@/components/ui/button";
 import localFont from 'next/font/local';
-import { useSmoothScroll } from "@/hooks/use-smooth-scroll"; // Importando o hook
+import { useSmoothScroll } from "@/hooks/use-smooth-scroll";
 
 const FontArista = localFont({ src: 'fonts/Arista-Pro-Regular-trial.woff2' });
 
 export default function HeroSection() {
-  const scrollToElement = useSmoothScroll(); // Usando o hook
+  const scrollToElement = useSmoothScroll();
 
   const handleProjectClick = () => {
-    scrollToElement('contact'); // Navega suavemente até a seção de contato
+    scrollToElement('contact');
   };
 
   return (
-    <section className={`bg-gradient-to-r from-gray-900 to-gray-800 w-full text-white py-16 md:py-24 ${FontArista.className}`}>
+    <section className={`bg-black w-full text-white py-16 md:py-24 ${FontArista.className}`}>
       <div className="container mx-auto px-4 text-center">
         <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold mb-4 leading-tight">
           Transformando Ideias em <span className="text-green-400">Realidade Digital</span>
@@ -22,7 +22,7 @@ export default function HeroSection() {
         </p>
         <Button 
           className="bg-green-500 text-white hover:bg-green-600 text-lg py-6 px-8" 
-          onClick={handleProjectClick} // Adicionando o onClick aqui
+          onClick={handleProjectClick}
         >
           Comece seu Projeto
         </Button>
