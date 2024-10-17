@@ -51,9 +51,9 @@ export default function ContactSection() {
   };
 
   return (
-    <section id="contact" className={`py-16 md:py-20 w-full bg-white dark:bg-black dark:text-white`}>
+    <section id="contact" className={`py-16 md:py-20 w-full bg-white dark:bg-background ${FontArista.className}`}>
       <div className="container mx-auto px-4">
-        <h2 className={`text-3xl md:text-4xl font-bold text-gray-800 dark:text-white text-center mb-12 md:mb-16 ${FontArista.className}`}>
+        <h2 className={`text-3xl md:text-4xl font-bold text-gray-800 dark:text-primary text-center mb-12 md:mb-16`}>
           Entre em Contato
         </h2>
         <div className="max-w-lg mx-auto">
@@ -61,7 +61,7 @@ export default function ContactSection() {
             <Input
               type="text"
               placeholder="Nome"
-              className={`w-full py-3 px-4`}
+              className={`w-full py-3 px-4 bg-white dark:bg-card text-gray-800 dark:text-primary border-gray-300 dark:border-gray-700 focus:ring-2 focus:ring-primary dark:focus:ring-primary`}
               value={nome}
               onChange={(e) => setNome(e.target.value)}
               required
@@ -69,7 +69,7 @@ export default function ContactSection() {
             <Input
               type="email"
               placeholder="E-mail"
-              className={`w-full py-3 px-4`}
+              className={`w-full py-3 px-4 bg-white dark:bg-card text-gray-800 dark:text-primary border-gray-300 dark:border-gray-700 focus:ring-2 focus:ring-primary dark:focus:ring-primary`}
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               required
@@ -77,14 +77,14 @@ export default function ContactSection() {
             <Input
               type="tel"
               placeholder="Telefone"
-              className={`w-full py-3 px-4`}
+              className={`w-full py-3 px-4 bg-white dark:bg-card text-gray-800 dark:text-primary border-gray-300 dark:border-gray-700 focus:ring-2 focus:ring-primary dark:focus:ring-primary`}
               value={telefone}
               onChange={(e) => setTelefone(e.target.value)}
               required
             />
             <Textarea
               placeholder="Mensagem"
-              className={`w-full py-3 px-4`}
+              className={`w-full py-3 px-4 bg-white dark:bg-card text-gray-800 dark:text-primary border-gray-300 dark:border-gray-700 focus:ring-2 focus:ring-primary dark:focus:ring-primary`}
               rows={5}
               value={mensagem}
               onChange={(e) => setMensagem(e.target.value)}
@@ -92,18 +92,14 @@ export default function ContactSection() {
             />
             <Button
               type="submit"
-              className={`w-full bg-gray-600 dark:bg-green-600 text-white hover:bg-gray-800 py-3 md:py-4 text-base md:text-lg font-semibold ${FontArista.className}`}
+              className={`w-full bg-gray-600 dark:bg-primary text-white dark:text-background hover:bg-gray-800 dark:hover:bg-primary/90 py-3 md:py-4 text-base md:text-lg font-semibold transition-all duration-300 shadow-lg hover:shadow-xl`}
             >
               Enviar Mensagem
             </Button>
           </form>
-
           <div className="mt-12 text-center">
-            <h3 className={`text-xl font-bold mb-4 ${FontArista.className}`}>Ou contate-nos via WhatsApp</h3>
-            <WhatsAppButton 
-              phoneNumber="69999900694" 
-              message="Olá, Colab Devs!" 
-            />
+            <h3 className={`text-xl font-bold mb-4 text-gray-800 dark:text-primary`}>Ou contate-nos via WhatsApp</h3>
+            <WhatsAppButton phoneNumber="69999900694" message="Olá, Colab Devs!" />
           </div>
         </div>
       </div>
