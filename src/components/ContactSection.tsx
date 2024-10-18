@@ -53,7 +53,7 @@ export default function ContactSection() {
   return (
     <section id="contact" className={`py-16 md:py-20 w-full bg-white dark:bg-background`}>
       <div className="container mx-auto px-4">
-        <h2 className={`text-3xl md:text-4xl font-bold text-gray-800 dark:text-primary text-center mb-12 md:mb-16`}>
+        <h2 className={`text-3xl md:text-4xl font-bold text-gray-800 dark:text-primary text-center mb-12 md:mb-16 ${FontArista.className}`}>
           Entre em Contato
         </h2>
         <div className="max-w-lg mx-auto">
@@ -92,13 +92,13 @@ export default function ContactSection() {
             />
             <Button
               type="submit"
-              className={`w-full bg-gray-600 dark:bg-primary text-white dark:text-background hover:bg-gray-800 dark:hover:bg-primary/90 py-3 md:py-4 text-base md:text-lg font-semibold transition-all duration-300 shadow-lg hover:shadow-xl`}
+              className={`w-full bg-black dark:bg-primary text-white dark:text-background hover:bg-gray-800 dark:hover:bg-primary/90 py-3 md:py-4 text-base md:text-lg font-semibold transition-all duration-300 shadow-lg hover:shadow-xl ${FontArista.className}`}
             >
               Enviar Mensagem
             </Button>
           </form>
           <div className="mt-12 text-center">
-            <h3 className={`text-xl font-bold mb-4 text-gray-800 dark:text-primary`}>Ou contate-nos via WhatsApp</h3>
+            <h3 className={`text-xl font-bold mb-4 text-gray-800 dark:text-primary ${FontArista.className}`}>Ou contate-nos via WhatsApp</h3>
             <WhatsAppButton phoneNumber="6999848414" message="Olá, Colab Devs!" />
           </div>
         </div>
