@@ -39,7 +39,7 @@ export default function HeroPageRocket() {
                     <img src='/Rocket.svg' className='h-[450px] lg:h-[480px]' />
                     <img src='/Smoke.svg' className='md:absolute lg:absolute lg:bottom-0 top-0 w-full z-0 lg:mt-0 -mt-[228px] md:hidden ' />
                 </div>
-                <img src='/Smoke.svg' className='absolute bottom-0 w-full z-0 md:flex hidden ' />
+                <img src='/Smoke.svg' className='absolute bottom-0 w-full z-0 md:flex hidden transform translate-y-[27px]' />
             </div>
         </>
     );
