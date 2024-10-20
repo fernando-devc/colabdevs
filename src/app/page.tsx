@@ -12,6 +12,7 @@ import ContactSection from "@/components/ContactSection"
 import PartnersSection from "@/components/PartnersSection"
 import Footer from "@/components/Footer"
 import BackToTopButton from "@/components/BackToTopButton"
+import SpaceService from "@/components/space-services"
 
 
 export default function Home() {
@@ -25,7 +26,7 @@ export default function Home() {
 
   return (
     <div className="h-full dark:bg-black bg-white flex items-center flex-col relative">
-      <div className="h-screen top-0 bottom-0 overflow-hidden absolute z-0 w-full">
+      <div className="h-screen top-0 bottom-0 overflow-hidden absolute z-20 w-full ">
         {[...Array(100)].map((_, index) => (
           <Star key={index} size={Math.floor(Math.random() * 2) + 1} />
           
@@ -34,12 +35,11 @@ export default function Home() {
       <Header />
       <main className="z-10 w-full h-full flex justify-start items-start flex-col">
         <HeroPageRocket />
-        <img src="rocket _bg.png" alt="" className="w-full h-20" /> 
         <AboutSection />
-        <ServicesSection />
-        <HeroSection />
+        {/* <ServicesSection /> */}
+        {/* <HeroSection /> */}
+        <SpaceService/>
         <CasesSection />
-        
         <ContactSection />
         <PartnersSection />
         <Footer />

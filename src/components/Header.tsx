@@ -36,7 +36,7 @@ export default function Header() {
   };
 
   return (
-    <header className="py-2 w-full mx-auto px-5 lg:justify-start justify-center flex z-10">
+    <header className="py-2 w-full mx-auto px-5 lg:justify-start justify-center flex z-50">
       <nav className="flex container mx-auto items-center">
         <div>
           {theme !== "dark" ? (
