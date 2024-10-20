@@ -15,7 +15,7 @@ export default function HeroPageRocket() {
 
     return (
         <>
-            <div className='h-full w-full flex items-center relative flex-col justify-between dark:bg-black dark:text-white'>
+            <div className='h-full w-full flex items-center relative flex-col justify-between dark:text-white'>
                 <img src='/Moon.svg' className='absolute md:top-5 lg:top-5 -top-5 right-5 md:right-28 lg:right-28 md:h-28 lg:h-28 h-16' />
                 <div className='flex flex-col justify-center text-center pt-10 z-10 px-5 items-center flex-1 lg:mb-0 -mb-10'>
                     <h1 className={(FontArista.className) + ' dark:text-white text-[25px] md:text-[65px] lg:text-[65px] leading-none'}>

@@ -26,7 +26,7 @@ export default function Home() {
 
   return (
     <div className="h-full dark:bg-black bg-white flex items-center flex-col relative">
-      <div className="h-screen top-0 bottom-0 overflow-hidden absolute z-20 w-full ">
+      <div className="h-screen top-0 bottom-0 overflow-hidden absolute z-0 w-full ">
         {[...Array(50)].map((_, index) => (
           <Star key={index} size={Math.floor(Math.random() * 2) + 1} />
           
