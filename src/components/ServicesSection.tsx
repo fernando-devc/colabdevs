@@ -26,21 +26,21 @@ export default function ServicesSection() {
               <Code className="text-green-500 dark:text-primary w-12 h-12 md:w-16 md:h-16 mb-4 md:mb-6 mx-auto" />
             }
             title="Desenvolvimento Web"
-            description="Criamos websites responsivos e intuitivos..."
+            description="Criamos websites responsivos e intuitivos que elevam a presença online da sua empresa."
           />
           <ServiceCard
             icon={
               <Laptop className="text-green-500 dark:text-primary w-12 h-12 md:w-16 md:h-16 mb-4 md:mb-6 mx-auto" />
             }
             title="Aplicativos Mobile"
-            description="Desenvolvemos aplicativos móveis inovadores..."
+            description="Desenvolvemos aplicativos móveis inovadores para iOS e Android que engajam seus usuários."
           />
           <ServiceCard
             icon={
               <Users className="text-green-500 dark:text-primary w-12 h-12 md:w-16 md:h-16 mb-4 md:mb-6 mx-auto" />
             }
             title="Consultoria em TI"
-            description="Oferecemos consultoria especializada..."
+            description="Oferecemos consultoria especializada para otimizar seus processos e infraestrutura de TI."
           />
         </div>
       </div>

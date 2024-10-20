@@ -28,14 +28,14 @@ export default function CasesSection() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
           <CaseCard
             title="Hug Food"
-            description="Aplicativo de delivery..."
+            description="Aplicativo de delivery com integração de pagamento com a C88 Pay."
             tech="APP IOS / Android"
             imageUrl="/hug.png"
             link="https://www.hugfood.com.br/"
           />
           <CaseCard
             title="C88 PAY"
-            description="Site e Aplicativo de Soluções de Pagamento"
+            description="Site e Aplicativo de Soluções de Pagamento."
             tech="Web & APP IOS / Android"
             imageUrl="/c88.png"
             link="https://www.c88pay.com.br/"
