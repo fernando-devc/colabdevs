@@ -34,7 +34,7 @@ export default function SpaceService() {
   return (
     <div className="dark:bg-black dark:text-white w-full min-h-screen flex flex-col justify-center items-center p-8 overflow-hidden relative">
       <div className="h-screen top-0 bottom-0 overflow-hidden absolute z-20 w-full ">
-        {[...Array(100)].map((_, index) => (
+        {[...Array(25)].map((_, index) => (
           <Star key={index} size={Math.floor(Math.random() * 2) + 1} />
           
         ))}
@@ -46,7 +46,7 @@ export default function SpaceService() {
         initial={{ y: -50, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 1 }}
-        className="text-5xl font-bold mb-12 text-green-400 z-10"
+        className="text-3xl lg:text-5xl font-bold mb-12 text-green-400 z-10"
       >
         Nossos Serviços
       </motion.h1>
@@ -58,7 +58,7 @@ export default function SpaceService() {
           animate={{ opacity: 1, x: 0 }}
           exit={{ opacity: 0, x: -100 }}
           transition={{ duration: 0.5 }}
-          className="dark:bg-gray-900 bg-green-500 bg-opacity-80 p-8 rounded-lg shadow-lg text-center"
+          className="dark:bg-gray-900 bg-green-500 bg-opacity-80 p-8 rounded-lg shadow-lg text-center h-96"
         >
           {services[currentService].icon  }
           <h2 className="text-3xl font-bold mb-4">{services[currentService].title}</h2>
@@ -139,7 +139,7 @@ function Moon() {
 function Planet1() {
   return (
     <motion.div
-      className="absolute bottom-20 left-20 w-44 lg:w-64 h-44 lg:h-64 rounded-full"
+      className="absolute bottom-0 left-0 lg:bottom-20 lg:left-20 w-32 lg:w-64 h-32 lg:h-64 rounded-full"
       animate={{ y: [0, 20, 0] }}
       transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }}
     >
